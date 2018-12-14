@@ -1,0 +1,10 @@
+node_modules/
+cache/
+.vscode/
+.git/
+.eslintrc
+logs/
+temp/
+k8s-deploy-compose.yml
+nodemon.json
+package-lock.json
