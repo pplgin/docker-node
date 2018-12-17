@@ -3,8 +3,10 @@ node_modules
 npm-debug.log
 .idea/
 dist/
+db
 .vscode
 logs/*
+mongo.*
 package.*.json
 package-lock.json
 *.log

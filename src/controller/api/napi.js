@@ -1,4 +1,4 @@
-const { Controller } = require('@cctalk/owl')
+const { Controller } = require('pplgin-owl')
 
 module.exports = class Api extends Controller {
   async test() {
@@ -17,6 +17,21 @@ module.exports = class Api extends Controller {
     const { name, pwd } = ctx.request.body
     try {
       const res = await ctx.service.user.register({ name, pwd })
+      ctx.status = 200
+      ctx.body = res
+    } catch (error) {
+      ctx.log.error(JSON.stringify(error))
+      ctx.status = 500
+      ctx.body = `error :${JSON.stringify(error)}`
+    }
+  }
+
+
+  async find() {
+  	const { ctx } = this
+    const { id, ...args } = ctx.query
+    try {
+      const res = await ctx.service.user.find({ id, ...args })
       ctx.status = 200
       ctx.body = res
     } catch (error) {

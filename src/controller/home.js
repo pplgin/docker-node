@@ -1,4 +1,4 @@
-const { Controller } = require('@cctalk/owl')
+const { Controller } = require('pplgin-owl')
 
 module.exports = class Home extends Controller {
 	test() {

@@ -6,6 +6,8 @@ module.exports = {
   pkg,
   PORT,
   NODE_ENV,
-  logFilePath: LOG_FILE_PATH, // logfile dir
-  db: 'mongodb://mongo:27017/docker'
+  logConfig: {
+    logFilePath: LOG_FILE_PATH, // logfile dir
+  },
+  db: 'mongodb://mongo/docker'
 }
