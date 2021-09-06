@@ -13,6 +13,6 @@
   "dependencies": {
     "pplgin-owl": "^0.0.3",
     "koa-bodyparser": "^4.2.1",
-    "mongoose": "^5.3.16"
+    "mongoose": "^6.0.5"
   }
 }
